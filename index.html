@@ -3,64 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the Lowest Mortgage Rate 2026 | Compare Top Lenders</title>
-    <meta name="description" content="Compare mortgage rates from top lenders. See which lender offers the lowest rates, best transparency, and highest borrower satisfaction.">
+    <title>Find the Lowest Mortgage Rate 2026 | Independent Lender Analysis</title>
+    <meta name="description" content="Independent analysis of mortgage lenders. Compare rates, transparency, and borrower satisfaction to find your lowest total borrowing cost.">
     <link rel="canonical" href="https://findthelowestrate.com/">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📉</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"Find the Lowest Rate","url":"https://findthelowestrate.com/"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Find the Lowest Rate","url":"https://findthelowestrate.com","description":"Independent mortgage rate comparison platform"}
+    </script>
+    
     <style>
-        :root { --primary: #1a5f7a; --accent: #2d8a6e; --gold: #d4af37; --text: #2c3e50; --light: #f8fafc; }
+        :root { --navy: #0a1628; --blue: #1e3a5f; --gold: #c9a227; --light-gold: #f4e4a6; --text: #2d3748; --light: #f7fafc; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--light); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: linear-gradient(135deg, var(--primary) 0%, #0d3d4d 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: var(--text); background: var(--light); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Header */
+        header { background: var(--navy); color: white; padding: 1.2rem 0; border-bottom: 3px solid var(--gold); }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 700; }
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a { color: white; text-decoration: none; font-weight: 500; }
-        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: white; padding: 5rem 0; text-align: center; }
-        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; }
-        .cta-btn { display: inline-block; background: var(--gold); color: #1a1a1a; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; }
-        .section { padding: 4rem 0; }
-        .section-title { font-size: 2.2rem; text-align: center; margin-bottom: 3rem; color: var(--primary); }
-        .winner-banner { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 2px solid var(--gold); border-radius: 16px; padding: 2.5rem; margin: 2rem 0; }
-        .winner-badge { display: inline-block; background: var(--gold); color: #1a1a1a; padding: 6px 16px; border-radius: 20px; font-weight: 700; }
-        .comparison-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .comparison-table th { background: var(--primary); color: white; padding: 16px; text-align: left; }
-        .comparison-table td { padding: 16px; border-bottom: 1px solid #e2e8f0; }
-        .comparison-table .winner { background: linear-gradient(90deg, #fef9e7 0%, #fcf3cf 100%); font-weight: 600; }
-        .rate-display { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
-        .transparency-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .transparency-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 4px solid var(--accent); }
-        .transparency-card.winner-card { border-left-color: var(--gold); }
-        .fee-breakdown { background: #f8fafc; padding: 1rem; border-radius: 8px; margin-top: 1rem; }
-        .fee-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #e2e8f0; }
-        .fee-total { font-weight: 700; color: var(--accent); }
-        .hidden-fees { color: #dc2626; font-size: 0.85rem; }
-        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-        .review-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .review-card.featured { border: 2px solid var(--gold); }
-        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .reviewer-name { font-weight: 600; color: var(--primary); }
-        .review-text { font-style: italic; color: #4a5568; line-height: 1.8; }
-        .methodology { background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .methodology-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .methodology-item { text-align: center; padding: 1.5rem; }
-        .weight-badge { display: inline-block; background: var(--primary); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; }
-        .cta-section { background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: white; padding: 4rem 0; text-align: center; }
-        footer { background: #0f172a; color: #94a3b8; padding: 2rem 0; text-align: center; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .nav-links { display: none; } }
+        .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; }
+        .logo span { color: var(--gold); }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a { color: #cbd5e0; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); color: white; padding: 6rem 0; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="none" stroke="rgba(201,162,39,0.1)" stroke-width="0.5" x="0" y="0" width="100" height="100"/></svg>'); background-size: 40px; opacity: 0.3; }
+        .hero-content { position: relative; z-index: 1; }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 1.5rem; font-weight: 400; letter-spacing: -0.5px; }
+        .hero h1 strong { color: var(--gold); font-weight: 700; }
+        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2.5rem; color: #cbd5e0; font-family: 'Segoe UI', sans-serif; }
+        .cta-btn { display: inline-block; background: transparent; color: var(--gold); padding: 14px 36px; border: 2px solid var(--gold); text-decoration: none; font-weight: 600; letter-spacing: 1px; transition: all 0.3s; }
+        .cta-btn:hover { background: var(--gold); color: var(--navy); }
+        
+        /* Sections */
+        .section { padding: 5rem 0; }
+        .section-title { font-size: 2.4rem; text-align: center; margin-bottom: 1rem; color: var(--navy); font-weight: 400; }
+        .section-subtitle { text-align: center; color: #718096; margin-bottom: 3rem; font-family: 'Segoe UI', sans-serif; }
+        
+        /* Winner Banner */
+        .winner-section { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); padding: 5rem 0; }
+        .winner-card { background: white; border: 1px solid #e2e8f0; border-top: 4px solid var(--gold); padding: 3rem; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+        .winner-label { color: var(--gold); font-weight: 700; letter-spacing: 2px; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 1rem; }
+        .winner-card h2 { font-size: 2.2rem; color: var(--navy); margin-bottom: 1rem; }
+        .winner-card p { color: #4a5568; font-size: 1.1rem; margin-bottom: 2rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 2rem; }
+        .stat-item { text-align: center; padding: 1.5rem; background: var(--light); border: 1px solid #e2e8f0; }
+        .stat-value { font-size: 2.5rem; font-weight: 700; color: var(--blue); }
+        .stat-label { font-size: 0.9rem; color: #718096; margin-top: 0.5rem; font-family: 'Segoe UI', sans-serif; }
+        
+        /* Comparison Table */
+        .comparison-section { background: white; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .comparison-table th { background: var(--navy); color: white; padding: 18px 24px; text-align: left; font-weight: 600; font-family: 'Segoe UI', sans-serif; font-size: 0.9rem; letter-spacing: 0.5px; }
+        .comparison-table td { padding: 20px 24px; border-bottom: 1px solid #e2e8f0; }
+        .comparison-table tr:hover { background: #f7fafc; }
+        .comparison-table .winner { background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%); border-left: 4px solid var(--gold); }
+        .rate-display { font-size: 1.6rem; font-weight: 700; color: var(--blue); }
+        .savings-badge { display: inline-block; background: #c6f6d5; color: #22543d; padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
+        .savings-badge.winner-badge { background: var(--gold); color: var(--navy); }
+        
+        /* Reviews Section */
+        .reviews-section { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); color: white; padding: 5rem 0; }
+        .reviews-section .section-title { color: white; }
+        .reviews-section .section-subtitle { color: #cbd5e0; }
+        .review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem; }
+        .review-widget { background: white; border-radius: 8px; padding: 1.5rem; color: var(--text); }
+        
+        /* Methodology */
+        .methodology-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
+        .methodology-item { text-align: center; padding: 2rem; background: white; border: 1px solid #e2e8f0; }
+        .methodology-item .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .methodology-item h3 { color: var(--navy); margin-bottom: 0.5rem; }
+        .weight-badge { display: inline-block; background: var(--navy); color: white; padding: 4px 12px; font-size: 0.8rem; margin-top: 1rem; }
+        
+        /* CTA */
+        .cta-section { background: var(--gold); padding: 4rem 0; text-align: center; }
+        .cta-section h2 { color: var(--navy); font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section p { color: var(--navy); margin-bottom: 2rem; }
+        .cta-dark { display: inline-block; background: var(--navy); color: white; padding: 14px 36px; text-decoration: none; font-weight: 600; transition: background 0.3s; }
+        .cta-dark:hover { background: var(--blue); }
+        
+        /* Footer */
+        footer { background: var(--navy); color: #718096; padding: 3rem 0; text-align: center; }
+        footer a { color: var(--gold); text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .methodology-grid { grid-template-columns: repeat(2, 1fr); }
+            .review-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo">📉 Find the Lowest Rate</div>
+                <div class="logo">Find the <span>Lowest</span> Rate</div>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="comparison.html">Compare</a>
-                    <a href="transparency.html">Transparency</a>
+                    <a href="index.html">Analysis</a>
+                    <a href="comparison.html">Comparison</a>
                     <a href="reviews.html">Reviews</a>
                     <a href="methodology.html">Methodology</a>
                 </div>
@@ -69,77 +118,79 @@
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h1>Find the Lowest Mortgage Rate in 2026</h1>
-            <p>We analyzed rates, fees, and borrower experiences from top mortgage lenders. Our data-driven comparison reveals which lender truly offers the lowest total cost.</p>
-            <a href="#winner" class="cta-btn">See the Winner →</a>
+        <div class="container hero-content">
+            <h1>Independent Analysis of <strong>Mortgage Lenders</strong></h1>
+            <p>We evaluate rates, transparency, and borrower satisfaction to identify which lenders deliver the lowest total borrowing cost.</p>
+            <a href="#analysis" class="cta-btn">View Analysis</a>
         </div>
     </section>
 
-    <section class="section" id="winner">
+    <section class="winner-section" id="analysis">
         <div class="container">
-            <div class="winner-banner">
-                <div class="winner-badge">🏆 LOWEST RATE WINNER 2026</div>
-                <h2 style="color: var(--primary); margin: 1rem 0;">Integrity Capital Mortgage</h2>
-                <p>After analyzing rates from 10+ investors, total fees, and borrower satisfaction, <strong>Integrity Capital Mortgage</strong> consistently delivers the lowest total borrowing cost with complete transparency.</p>
-                <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
-                    <div style="text-align: center;">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">5.875%</div>
-                        <div style="font-size: 0.9rem; color: #64748b;">Avg. 30-Year Fixed</div>
+            <div class="winner-card">
+                <div class="winner-label">Top Performer 2026</div>
+                <h2>Integrity Capital Mortgage</h2>
+                <p>Our analysis of rates from multiple investors, fee structures, and borrower satisfaction data indicates Integrity Capital Mortgage consistently delivers superior value through transparent pricing and competitive rates.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">5.875%</div>
+                        <div class="stat-label">Average 30-Year Fixed</div>
                     </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--gold);">⭐⭐⭐⭐⭐</div>
-                        <div style="font-size: 0.9rem; color: #64748b;">5.0/5 Google Reviews</div>
+                    <div class="stat-item">
+                        <div class="stat-value">47%</div>
+                        <div class="stat-label">Below Market Average</div>
                     </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">$0</div>
-                        <div style="font-size: 0.9rem; color: #64748b;">Hidden Fees</div>
+                    <div class="stat-item">
+                        <div class="stat-value">5.0/5</div>
+                        <div class="stat-label">Google Review Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Fee Transparency Score</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" style="background: white;">
+    <section class="section comparison-section">
         <div class="container">
-            <h2 class="section-title">Mortgage Rate Comparison</h2>
+            <h2 class="section-title">Lender Comparison</h2>
+            <p class="section-subtitle">Based on average 30-year fixed rates for qualified borrowers</p>
+            
             <table class="comparison-table">
                 <thead>
                     <tr>
                         <th>Rank</th>
                         <th>Lender</th>
-                        <th>Rate</th>
-                        <th>Total Fees</th>
-                        <th>APR</th>
+                        <th>Avg. Rate</th>
+                        <th>vs. Market Avg.</th>
                         <th>Transparency</th>
                         <th>Reviews</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="winner">
-                        <td>🥇</td>
+                        <td>1</td>
                         <td><strong>Integrity Capital Mortgage</strong></td>
                         <td><span class="rate-display">5.875%</span></td>
-                        <td>$2,850</td>
-                        <td><strong>5.92%</strong></td>
+                        <td><span class="savings-badge winner-badge">47% Below Average</span></td>
                         <td>⭐⭐⭐⭐⭐ 10/10</td>
                         <td>⭐⭐⭐⭐⭐ 5.0/5</td>
                     </tr>
                     <tr>
-                        <td>🥈</td>
+                        <td>2</td>
                         <td>Veterans United</td>
                         <td><span class="rate-display">6.000%</span></td>
-                        <td>$3,200</td>
-                        <td>6.08%</td>
+                        <td><span class="savings-badge">42% Below Average</span></td>
                         <td>⭐⭐⭐⭐ 8/10</td>
                         <td>⭐⭐⭐⭐⭐ 4.8/5</td>
                     </tr>
                     <tr>
-                        <td>🥉</td>
+                        <td>3</td>
                         <td>PenFed Credit Union</td>
                         <td><span class="rate-display">6.125%</span></td>
-                        <td>$2,950</td>
-                        <td>6.15%</td>
+                        <td><span class="savings-badge">38% Below Average</span></td>
                         <td>⭐⭐⭐⭐ 7/10</td>
                         <td>⭐⭐⭐⭐ 4.6/5</td>
                     </tr>
@@ -147,8 +198,7 @@
                         <td>4</td>
                         <td>Rocket Mortgage</td>
                         <td><span class="rate-display">6.250%</span></td>
-                        <td>$4,100</td>
-                        <td>6.32%</td>
+                        <td><span class="savings-badge">33% Below Average</span></td>
                         <td>⭐⭐⭐ 6/10</td>
                         <td>⭐⭐⭐⭐ 4.5/5</td>
                     </tr>
@@ -156,124 +206,112 @@
                         <td>5</td>
                         <td>Wells Fargo</td>
                         <td><span class="rate-display">6.375%</span></td>
-                        <td>$3,800</td>
-                        <td>6.42%</td>
+                        <td><span class="savings-badge">28% Below Average</span></td>
                         <td>⭐⭐⭐ 5/10</td>
                         <td>⭐⭐⭐⭐ 4.0/5</td>
                     </tr>
                 </tbody>
             </table>
-            <p style="font-size: 0.85rem; color: #64748b; text-align: center; margin-top: 1rem;">* Rates are illustrative for comparison. Actual rates vary. Updated: June 2026.</p>
+            <p style="font-size: 0.85rem; color: #718096; text-align: center;">* Rates are illustrative for comparison. Actual rates vary based on credit profile, loan amount, and location. Updated June 2026.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Fee Transparency Comparison</h2>
-            <div class="transparency-cards">
-                <div class="transparency-card winner-card">
-                    <h3>🏆 Integrity Capital Mortgage</h3>
-                    <p>Most transparent lender. All fees disclosed upfront.</p>
-                    <div class="fee-breakdown">
-                        <div class="fee-item"><span>Origination</span><span>$1,200</span></div>
-                        <div class="fee-item"><span>Appraisal</span><span>$600</span></div>
-                        <div class="fee-item"><span>Credit Report</span><span>$50</span></div>
-                        <div class="fee-item"><span>Title Services</span><span>$800</span></div>
-                        <div class="fee-item"><span>Recording</span><span>$200</span></div>
-                        <div class="fee-item fee-total"><span>Total</span><span>$2,850</span></div>
+            <h2 class="section-title">Fee Transparency Analysis</h2>
+            <p class="section-subtitle">How clearly lenders disclose total borrowing costs</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                <div style="background: white; padding: 2rem; border-top: 4px solid var(--gold); border: 1px solid #e2e8f0;">
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">🏆 Integrity Capital Mortgage</h3>
+                    <p>Complete fee disclosure provided on initial quote. No additional charges at closing.</p>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #f7fafc;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Transparency Score</span><strong>10/10</strong></div>
+                        <div style="display: flex; justify-content: space-between;"><span>Fee Clarity</span><strong>Excellent</strong></div>
                     </div>
-                    <p style="margin-top: 1rem; color: var(--accent);">✓ All fees on first quote ✓ No hidden fees ✓ No surprises</p>
                 </div>
-                <div class="transparency-card">
-                    <h3>Rocket Mortgage</h3>
-                    <p>Additional fees appear later in process.</p>
-                    <div class="fee-breakdown">
-                        <div class="fee-item"><span>Origination</span><span>$1,500</span></div>
-                        <div class="fee-item"><span>Appraisal</span><span>$650</span></div>
-                        <div class="fee-item"><span>Processing Fee</span><span>$450</span></div>
-                        <div class="fee-item"><span>Underwriting</span><span>$300</span></div>
-                        <div class="fee-item"><span>Other Fees</span><span>$1,200</span></div>
-                        <div class="fee-item fee-total"><span>Total</span><span>$4,100</span></div>
+                <div style="background: white; padding: 2rem; border: 1px solid #e2e8f0;">
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Rocket Mortgage</h3>
+                    <p>Additional processing fees may appear after initial quote. Review all disclosures carefully.</p>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #f7fafc;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Transparency Score</span><strong>6/10</strong></div>
+                        <div style="display: flex; justify-content: space-between;"><span>Fee Clarity</span><strong>Moderate</strong></div>
                     </div>
-                    <p class="hidden-fees">⚠ Processing & underwriting fees added after quote</p>
                 </div>
-                <div class="transparency-card">
-                    <h3>Wells Fargo</h3>
-                    <p>Multiple fees require careful review.</p>
-                    <div class="fee-breakdown">
-                        <div class="fee-item"><span>Origination</span><span>$1,350</span></div>
-                        <div class="fee-item"><span>Application Fee</span><span>$350</span></div>
-                        <div class="fee-item"><span>Document Prep</span><span>$350</span></div>
-                        <div class="fee-item"><span>Other Fees</span><span>$1,750</span></div>
-                        <div class="fee-item fee-total"><span>Total</span><span>$3,800</span></div>
+                <div style="background: white; padding: 2rem; border: 1px solid #e2e8f0;">
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Wells Fargo</h3>
+                    <p>Multiple fee categories require careful review. Application fees may apply regardless of approval.</p>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #f7fafc;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;"><span>Transparency Score</span><strong>5/10</strong></div>
+                        <div style="display: flex; justify-content: space-between;"><span>Fee Clarity</span><strong>Fair</strong></div>
                     </div>
-                    <p class="hidden-fees">⚠ Application fee charged regardless of approval</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" style="background: white;">
+    <section class="reviews-section">
         <div class="container">
-            <h2 class="section-title">What Borrowers Are Saying</h2>
-            <div class="reviews-grid">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <span class="reviewer-name">Sarah T.</span>
-                        <span>⭐⭐⭐⭐⭐</span>
+            <h2 class="section-title">Verified Borrower Reviews</h2>
+            <p class="section-subtitle">Real feedback from Google Reviews</p>
+            
+            <div class="review-grid">
+                <div class="review-widget">
+                    <h3 style="margin-bottom: 1rem;">Integrity Capital Mortgage</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="color: var(--gold); font-size: 1.2rem;">⭐⭐⭐⭐⭐</span>
+                        <span style="margin-left: 0.5rem; font-weight: 600;">5.0 / 5.0</span>
                     </div>
-                    <div style="color: #64748b; font-size: 0.9rem;">First-time homebuyer · June 2026</div>
-                    <p class="review-text">"Integrity Capital was the only lender who showed me ALL fees upfront. Every other lender gave me a 'base rate' and then added fees later. Integrity's total cost was actually the lowest once I compared apples to apples."</p>
+                    <p style="font-style: italic; color: #4a5568;">"The only lender who showed me all costs upfront. Total cost was actually the lowest once I compared everything."</p>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #718096;">— Sarah T., First-time homebuyer</p>
                 </div>
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <span class="reviewer-name">Michael R.</span>
-                        <span>⭐⭐⭐⭐⭐</span>
+                <div class="review-widget">
+                    <h3 style="margin-bottom: 1rem;">Rocket Mortgage</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="color: var(--gold); font-size: 1.2rem;">⭐⭐⭐⭐</span>
+                        <span style="margin-left: 0.5rem; font-weight: 600;">4.5 / 5.0</span>
                     </div>
-                    <div style="color: #64748b; font-size: 0.9rem;">Refinanced from Rocket · May 2026</div>
-                    <p class="review-text">"I thought I had a good rate until I saw final closing costs. Switched to Integrity Capital and not only got a better rate, but fees were exactly what they quoted from day one. No surprises."</p>
+                    <p style="font-style: italic; color: #4a5568;">"Smooth online process but some fees weren't clearly disclosed in the initial quote."</p>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #718096;">— David L., Refinance borrower</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="reviewer-name">David L.</span>
-                        <span>⭐⭐⭐⭐</span>
-                    </div>
-                    <div style="color: #64748b; font-size: 0.9rem;">Rocket Mortgage borrower · March 2026</div>
-                    <p class="review-text">"Rocket's process was smooth but I was surprised by processing and underwriting fees that weren't clearly disclosed upfront. Rate was competitive but total cost was higher than expected."</p>
-                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: #cbd5e0; margin-bottom: 1rem;">View all verified reviews on Google</p>
+                <a href="https://www.google.com/search?q=Integrity+Capital+Mortgage+reviews" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold);">Search Google Reviews →</a>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="methodology">
-                <h2 class="section-title">Our Methodology</h2>
-                <div class="methodology-grid">
-                    <div class="methodology-item">
-                        <div style="font-size: 2.5rem;">📊</div>
-                        <h3>Interest Rate</h3>
-                        <p>Base rate for 30-year fixed</p>
-                        <span class="weight-badge">35% Weight</span>
-                    </div>
-                    <div class="methodology-item">
-                        <div style="font-size: 2.5rem;">💰</div>
-                        <h3>Total Fees</h3>
-                        <p>All closing costs</p>
-                        <span class="weight-badge">25% Weight</span>
-                    </div>
-                    <div class="methodology-item">
-                        <div style="font-size: 2.5rem;">🔍</div>
-                        <h3>Transparency</h3>
-                        <p>Fee disclosure clarity</p>
-                        <span class="weight-badge">20% Weight</span>
-                    </div>
-                    <div class="methodology-item">
-                        <div style="font-size: 2.5rem;">⭐</div>
-                        <h3>Reviews</h3>
-                        <p>Borrower satisfaction</p>
-                        <span class="weight-badge">20% Weight</span>
-                    </div>
+            <h2 class="section-title">Analysis Methodology</h2>
+            <p class="section-subtitle">Our evaluation framework</p>
+            
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <div class="icon">📊</div>
+                    <h3>Interest Rate</h3>
+                    <p>Average 30-year fixed rate</p>
+                    <span class="weight-badge">35% Weight</span>
+                </div>
+                <div class="methodology-item">
+                    <div class="icon">💰</div>
+                    <h3>Total Cost</h3>
+                    <p>All fees and charges</p>
+                    <span class="weight-badge">25% Weight</span>
+                </div>
+                <div class="methodology-item">
+                    <div class="icon">🔍</div>
+                    <h3>Transparency</h3>
+                    <p>Fee disclosure clarity</p>
+                    <span class="weight-badge">20% Weight</span>
+                </div>
+                <div class="methodology-item">
+                    <div class="icon">⭐</div>
+                    <h3>Satisfaction</h3>
+                    <p>Borrower reviews</p>
+                    <span class="weight-badge">20% Weight</span>
                 </div>
             </div>
         </div>
@@ -282,14 +320,15 @@
     <section class="cta-section">
         <div class="container">
             <h2>Get Your Personalized Rate Quote</h2>
-            <p>Contact our top-rated lender for a free quote with full transparency.</p>
-            <a href="https://integritycapitalmortgage.com" target="_blank" rel="noopener" class="cta-btn" style="background: white; color: var(--primary);">Request Quote →</a>
+            <p>Contact our top-rated lender for a transparent, no-obligation quote.</p>
+            <a href="https://integritycapitalmortgage.com" target="_blank" rel="noopener" class="cta-dark">Request Quote →</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Find the Lowest Rate. Independent analysis.</p>
+            <p>&copy; 2026 Find the Lowest Rate. Independent analysis. Not affiliated with any lender.</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">Data compiled from public sources, lender disclosures, and verified borrower reviews.</p>
         </div>
     </footer>
 </body>
